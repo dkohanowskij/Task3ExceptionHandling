@@ -8,21 +8,21 @@ namespace Task1
 {
   class Program
   {
+    private static readonly bool flag = true;
     static void Main(string[] args)
     {
-      bool flag = true;
       while (flag)
       {
         Console.WriteLine("Enter the string:");
-        string inputString = Console.ReadLine();
+        var inputString = Console.ReadLine();
         if (string.IsNullOrEmpty(inputString))
         {
           Console.WriteLine("String is null or empty!");
         }
         else
         {
-          string tempStr = inputString.TrimStart();
-          Console.WriteLine("Result stirng: " + StringExtention.ToSystemString(tempStr.Take(1)));
+          var tempStr = inputString.TrimStart();
+          Console.WriteLine("Result stirng: " + tempStr.Substring(0, 1));
         }
 
         Console.WriteLine("\nPress any key...");
