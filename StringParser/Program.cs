@@ -22,7 +22,6 @@ namespace Task1
         else
         {
           string tempStr = inputString.TrimStart();
-          var str = tempStr.Take(1).GetType();
           Console.WriteLine("Result stirng: " + StringExtention.ToSystemString(tempStr.Take(1)));
         }
 
